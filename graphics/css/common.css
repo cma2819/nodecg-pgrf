@@ -7,3 +7,26 @@ body {
   background-image: url('/assets/pgrf/images/back.png');
   font-size: 18pt;
 }
+
+.box {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 60%),
+      rgba(255, 255, 255, 100%)
+    );
+  border: 2px solid gray;
+  border-radius: 16px;
+}
+
+.time {
+  font-family: 'Nova Mono', sans-serif;
+  font-weight: bold;
+}
+
+.label {
+  font-family: 'Staatliches', sans-serif;
+}
+
+.hashtag {
+  text-decoration: underline dashed;
+}

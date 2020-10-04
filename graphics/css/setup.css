@@ -6,28 +6,9 @@
   flex-direction: column;
 }
 
-.time{
-  font-family: 'Nova Mono', sans-serif;
-  font-weight: bold;
-}
-
 .caption, #hashtag-guide, #presents {
   font-family: 'Staatliches', sans-serif;
   font-size: 2em;
-}
-
-.box {
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 60%),
-      rgba(255, 255, 255, 100%)
-    );
-  border: 2px solid gray;
-  border-radius: 16px;
-}
-
-.hashtag {
-  text-decoration: underline dashed;
 }
 
 header {
