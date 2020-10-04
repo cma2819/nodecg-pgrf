@@ -1,0 +1,40 @@
+{
+  "name": "pgrf",
+  "version": "0.0.0",
+  "description": "Layout for Puzzle Game RTA Festival",
+  "homepage": "https://oengus.io/marathon/pgrf",
+  "author": {
+    "name": "poshi",
+    "email": "potadig.ashnerd.zino@gmail.com"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [],
+    "graphics": [
+      {
+        "file": "setup.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "assetCategories": [
+      {
+        "name": "images",
+        "title": "Images",
+        "allowedTypes": ["png"]
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT"
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Nova+Mono&family=Staatliches&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-image: url('/assets/pgrf/images/back.png');
+  font-size: 18pt;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.time{
+  font-family: 'Nova Mono', sans-serif;
+  font-weight: bold;
+}
+
+.caption, #hashtag-guide, #presents {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2em;
+}
+
+.box {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 60%),
+      rgba(255, 255, 255, 100%)
+    );
+  border: 2px solid gray;
+  border-radius: 16px;
+}
+
+.hashtag {
+  text-decoration: underline dashed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120px;
+  padding: 0 48px;
+  background-color: rgba(255, 255, 255, 80%);
+}
+
+#logo-ome, #logo-pgrf {
+  height: 100px;
+}
+
+#presents {
+  margin: 0 0.5em;
+}
+
+#now {
+  font-size: 2em;
+  margin-left: auto;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 64px;
+}
+
+#schedule {
+  display: inline-flex;
+  width: 1280px;
+  height: 720px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.game > * {
+  padding-left: 16px;
+}
+
+.game .title {
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: -0.2em;
+}
+
+.info div {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.next .game {
+  height: 200px;
+}
+
+.later-than-next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.later-than-next .time {
+  font-size: 1.4em;
+  width: 160px;
+}
+
+.later-than-next .game {
+  height: 160px;
+  font-size: 100%;
+}
+
+#tweet {
+  display: inline-flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+#tweet .box {
+  padding: 16px;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid gray;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#twitter-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+#tweet-text {
+  font-size: 0.9em;
+  padding-top: 8px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 48px;
+  background-color: rgba(255, 255, 255, 80%);
+}
+
+#spotify {
+  height: 48px;
+  padding: 0 24px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+#spotify span {
+  vertical-align: middle;
+}
