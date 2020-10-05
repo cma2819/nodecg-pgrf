@@ -1,0 +1,76 @@
+#runner-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 24px;
+}
+
+.video {
+  width: calc(1920px * 0.48);
+  height: calc(1080px * 0.48);
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+  margin-top: 8px;
+  padding-bottom: 2px;
+}
+
+.info-box .label {
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 70%);
+}
+
+.info-box .name {
+  font-size: 1.15em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.info-box .account {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.goal-time {
+  height: 1em;
+  font-size: 0.8em;
+  line-height: 1em;
+  text-align: right;
+}
+
+#common-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 24px;
+}
+
+#run-info {
+  width: 40%;
+}
+
+#tweet {
+  width: 56%;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+}
+
+#twitter-id {
+  align-self: center;
+}
+
+#twitter-icon {
+  display: inline-block;
+}
