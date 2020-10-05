@@ -8,6 +8,14 @@ body {
   font-size: 18pt;
 }
 
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .box {
   background:
     linear-gradient(

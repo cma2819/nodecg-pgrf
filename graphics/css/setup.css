@@ -1,11 +1,3 @@
-#container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 #hashtag-guide, #presents {
   font-family: 'Staatliches', sans-serif;
   font-size: 2em;
