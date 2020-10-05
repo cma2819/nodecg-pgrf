@@ -6,8 +6,12 @@
   flex-direction: column;
 }
 
-.caption, #hashtag-guide, #presents {
+#hashtag-guide, #presents {
   font-family: 'Staatliches', sans-serif;
+  font-size: 2em;
+}
+
+#up-next, #tweet-label {
   font-size: 2em;
 }
 
