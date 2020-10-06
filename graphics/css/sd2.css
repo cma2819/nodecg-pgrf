@@ -1,0 +1,49 @@
+#runner-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.video {
+  width: calc(1920px * 0.42);
+  height: calc(1440px * 0.42);
+}
+
+.info-box .label {
+  position: absolute;
+}
+
+.goal-time {
+  font-size: 0.8em;
+  line-height: 1em;
+  text-align: right;
+}
+
+#common-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 24px;
+}
+
+#run-info {
+  width: 40%;
+}
+
+#tweet {
+  width: 56%;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+}
+
+#twitter-id {
+  align-self: center;
+}
+
+#twitter-icon {
+  display: inline-block;
+}
