@@ -1,0 +1,35 @@
+header {
+  margin-left: 64px;
+}
+
+#main {
+  margin: 0 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#video {
+  width: calc(1920px * 0.62);
+  height: calc(1440px * 0.62);
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+
+#tweet {
+  margin-bottom: auto;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#twitter-icon {
+  display: block;
+}
