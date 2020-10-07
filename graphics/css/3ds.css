@@ -1,0 +1,64 @@
+#video-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 24px;
+}
+
+#video-main {
+  width: calc(1920px * 0.62);
+  height: calc(1152px * 0.62);
+}
+
+#video-sub {
+  width: calc(1920px * 0.34);
+  height: calc(1440px * 0.34);
+  align-self: flex-end;
+}
+
+#info-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 24px;
+}
+
+#run-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+}
+
+.info-box .label {
+  position: absolute;
+}
+
+#times {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#times > .info-box {
+  width: 48%;
+}
+
+#tweet {
+  width: 56%;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+}
+
+#twitter-id {
+  align-self: center;
+}
+
+#twitter-icon {
+  display: inline-block;
+}
