@@ -20,6 +20,10 @@ header {
   width: 480px;
 }
 
+.info-box {
+  margin-top: 8px;
+}
+
 #tweet {
   margin-bottom: auto;
 }
