@@ -55,6 +55,11 @@
         "file": "gbp.html",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "file": "ds.html",
+        "width": 1920,
+        "height": 1080
       }
     ],
     "assetCategories": [
