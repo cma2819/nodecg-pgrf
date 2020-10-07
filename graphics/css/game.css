@@ -64,6 +64,11 @@ header {
   line-height: 1.2em;
   font-weight: bold;
   text-align: right;
+  margin-top: auto;
+}
+
+.info-box .time {
+  margin-top: auto;
 }
 
 .info-box .account {
