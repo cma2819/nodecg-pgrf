@@ -99,6 +99,8 @@ export default class SetupScheduleComponent extends Vue {
     }
     return additionsModule.commentatorArray.filter((commentator) => {
       return commentator.assignedRunIdArray.find(runId => runId === this.runData.externalID);
+    }).map((commentator) => {
+      return commentator.name;
     }).join(' / ');
   }
 
