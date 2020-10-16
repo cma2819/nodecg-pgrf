@@ -1,17 +1,20 @@
 {
-  "name": "pgrf",
+  "name": "nodecg-pgrf",
   "version": "0.0.0",
   "description": "Layout for Puzzle Game RTA Festival",
-  "homepage": "https://oengus.io/marathon/pgrf",
+  "homepage": "https://github.com/cma2819/nodecg-pgrf",
   "author": {
-    "name": "poshi",
-    "email": "potadig.ashnerd.zino@gmail.com"
+    "name": "Cma",
+    "email": "chicchaima@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "poshi",
+      "email": "potadig.ashnerd.zino@gmail.com"
+    }
+  ],
   "files": [
-    "dashboard",
-    "graphics",
-    "extension.js",
-    "extension"
+    "graphics"
   ],
   "keywords": [
     "",
@@ -19,57 +22,130 @@
   ],
   "nodecg": {
     "compatibleRange": "^1.1.1",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.0.0",
+      "nodecg-twitter-widget": "^0.9.0",
+      "nodecg-spotify-widget": "^0.9.0"
+    },
     "dashboardPanels": [],
     "graphics": [
       {
-        "file": "setup.html",
+        "file": "Setup/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "hd1.html",
+        "file": "HD_solo/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "hd2.html",
+        "file": "HD_race/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "sd1.html",
+        "file": "SD_solo/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "sd2.html",
+        "file": "SD_race/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "3ds.html",
+        "file": "3DS_solo/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "gbp.html",
+        "file": "GBP/index.html",
         "width": 1920,
         "height": 1080
       },
       {
-        "file": "ds.html",
+        "file": "DS/index.html",
         "width": 1920,
         "height": 1080
       }
     ],
     "assetCategories": [
       {
-        "name": "images",
-        "title": "Images",
-        "allowedTypes": ["png"]
+        "name": "background",
+        "title": "背景画像",
+        "allowedTypes": [
+          "png", "jpg", "jpeg"
+        ]
+      },
+      {
+        "name": "ome-logo",
+        "title": "OMEロゴ",
+        "allowedTypes": [
+          "png", "jpg", "jpeg"
+        ]
+      },
+      {
+        "name": "pgrf-logo",
+        "title": "PGRFロゴ",
+        "allowedTypes": [
+          "png", "jpg", "jpeg"
+        ]
       }
     ]
   },
-  "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "MIT"
+  "main": "../../index.js",
+  "scripts": {
+    "autofix": "run-s autofix:*",
+    "autofix:browser": "eslint --fix --ext .ts,.vue src/browser",
+    "build": "run-s clean build:*",
+    "build:graphics": "parcel build src/browser/graphics/*/*.html --out-dir graphics --public-url ./",
+    "clean": "trash .cache dashboard graphics extension",
+    "watch:graphics": "parcel watch src/browser/graphics/*/*.html --out-dir graphics --public-url ./",
+    "start": "node ../..",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "schema-types": "nodecg schema-types -o src/nodecg/generated schemas",
+    "schema-lib-types": "nodecg schema-types -o src/nodecg/generated schemas/lib"
+  },
+  "repository": "https://github.com/cma2819/nodecg-pgrf.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/clone": "^0.1.30",
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.1",
+    "@types/spotify-web-api-node": "^4.0.1",
+    "@types/twitter": "^1.7.0",
+    "@types/uuid": "^3.4.7",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "@vue/component-compiler-utils": "^3.1.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-vue": "^6.2.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "stylus": "^0.54.7",
+    "trash-cli": "^3.0.0",
+    "ts-nodecg": "^0.3.0",
+    "typescript": "^3.7.5",
+    "vue-eslint-parser": "^7.0.0",
+    "vue-property-decorator": "^8.4.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuex-module-decorators": "^0.16.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "clone": "^2.1.2",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "googleapis": "^47.0.0",
+    "spotify-web-api-node": "^4.0.0",
+    "tslib": "^1.11.1",
+    "twitter": "^1.7.1",
+    "uuid": "^7.0.0",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuetify": "^2.2.12",
+    "vuex": "^3.1.2"
+  }
 }

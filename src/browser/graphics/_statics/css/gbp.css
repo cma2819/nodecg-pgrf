@@ -1,0 +1,53 @@
+
+#main {
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#video {
+  width: calc(1920px * 0.58);
+  height: calc(1728px * 0.58);
+  align-self: flex-end;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+}
+
+#tweet {
+  margin-top: 16px;
+  margin-bottom: auto;
+}
+
+#twitter-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#twitter-icon {
+  display: block;
+}
+
+#info-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#names, #times {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 46%;
+}
+
+.info-box {
+  margin-top: 8px;
+}

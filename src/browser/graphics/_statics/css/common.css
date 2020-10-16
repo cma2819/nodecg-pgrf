@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Nova+Mono&family=Staatliches&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-image: url('/assets/pgrf/images/back.png');
+  font-size: 18pt;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.box {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 60%),
+      rgba(255, 255, 255, 100%)
+    );
+  border: 2px solid gray;
+  border-radius: 16px;
+}
+
+.time {
+  font-family: 'Nova Mono', sans-serif;
+  font-weight: bold;
+}
+
+.label {
+  font-family: 'Staatliches', sans-serif;
+}
+
+.hashtag {
+  text-decoration: underline dashed;
+}
