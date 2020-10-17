@@ -12,6 +12,10 @@
   padding: 0 24px;
   background-color: white;
   border-radius: 24px;
+  width: 75vw;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #spotify span {

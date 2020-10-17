@@ -23,7 +23,10 @@
         <div class="runner">
           <span class="label">Runner: </span>{{ runners }}
         </div>
-        <div class="commentator">
+        <div
+          v-if="commentators"
+          class="commentator"
+        >
           <span class="label">Commentator: </span>{{ commentators }}
         </div>
       </div>
